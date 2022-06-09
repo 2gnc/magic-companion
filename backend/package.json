@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "./build/index.js",
+  "engines": {
+    "node": "16.14.0"
+  },
   "scripts": {
-    "dev": "node_modules/.bin/concurrently --names 'TS,SRV' -c 'green.bold,magenta.bold' 'npm run watch' 'npm run start:dev'",
+    "dev": "node_modules/.bin/concurrently --names 'TYPESCRIPT,EXPRESS' -c 'green.bold,magenta.bold' 'npm run watch' 'npm run start:dev'",
     "start:dev": "node_modules/.bin/nodemon ./build/index.js",
     "watch": "node_modules/.bin/tsc --project tsconfig.json -w",
     "build": "tsc",

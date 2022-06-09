@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "node_modules/.bin/concurrently --names 'TS,SRV' -c 'green.bold,magenta.bold'"
+    "start": "node_modules/.bin/concurrently --names 'SERVER,CLIENT' -c 'yellow.bold,blue.bold' 'cd backend && npm run dev' 'cd frontend && npm run start'"
   },
   "keywords": [],
   "author": "",
